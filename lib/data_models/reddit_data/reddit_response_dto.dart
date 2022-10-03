@@ -1,10 +1,10 @@
 class RedditResponseDto{
-  late final originalJson;
-  late final data;
+  late final Map<String, dynamic> originalJson;
+  late final RedditResponse data;
 
   RedditResponseDto.fromJson(Map<String, dynamic> json,) {
     originalJson = json;
-    data = data.fromJson(json);
+    data = RedditResponse.fromJson(json,);
   }
 }
 
@@ -144,7 +144,7 @@ class ChildData {
   dynamic contentCategories;
   bool? isSelf;
   String? subredditType;
-  int? created;
+  double? created;
   String? linkFlairType;
   int? wls;
   dynamic removedByCategory;
@@ -200,7 +200,7 @@ class ChildData {
   bool? stickied;
   String? url;
   int? subredditSubscribers;
-  int? createdUtc;
+  double? createdUtc;
   int? numCrossposts;
   Media? media;
   bool? isVideo;
@@ -369,7 +369,7 @@ class ChildData {
     final contentCategories = json['content_categories'];
     final isSelf = json['is_self'] as bool?;
     final subredditType = json['subreddit_type'] as String?;
-    final created = json['created'] as int?;
+    final created = json['created'] as double?;
     final linkFlairType = json['link_flair_type'] as String?;
     final wls = json['wls'] as int?;
     final removedByCategory = json['removed_by_category'];
@@ -425,7 +425,7 @@ class ChildData {
     final stickied = json['stickied'] as bool?;
     final url = json['url'] as String?;
     final subredditSubscribers = json['subreddit_subscribers'] as int?;
-    final createdUtc = json['created_utc'] as int?;
+    final createdUtc = json['created_utc'] as double?;
     final numCrossposts = json['num_crossposts'] as int?;
     final media = (json['media'] as Map<String,dynamic>?) != null ? Media.fromJson(json['media'] as Map<String,dynamic>,) : null;
     final isVideo = json['is_video'] as bool?;

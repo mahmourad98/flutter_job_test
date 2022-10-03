@@ -1,14 +1,22 @@
-import 'package:flutter/material.dart';
+import 'dart:developer';
 
-class HomeView extends StatefulWidget {
-  const HomeView({Key? key,}) : super(key: key,);
+import 'package:flutter/material.dart';
+import 'package:flutter_job_test/repositories/reddit_respository/reddit_data_repository.dart';
+
+import '../../locator.dart';
+
+class RedditView extends StatefulWidget {
+  const RedditView({Key? key,}) : super(key: key,);
 
   @override
-  State<HomeView> createState() => _HomeViewState();
+  State<RedditView> createState() => _RedditViewState();
 }
 
-class _HomeViewState extends State<HomeView> {
-
+class _RedditViewState extends State<RedditView> {
+  @override
+  void initState() {
+    super.initState();
+  }
   @override
   Widget build(BuildContext context,) {
     return Scaffold(

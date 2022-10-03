@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_job_test/views/home_view.dart';
+import 'package:flutter_job_test/views/reddit_view/home_view.dart';
 
 import 'locator.dart';
 
@@ -16,7 +16,7 @@ class AppRoot extends StatelessWidget {
       theme: ThemeData(primarySwatch: Colors.blue,),
       darkTheme: ThemeData(primarySwatch: Colors.grey,),
       builder: (buildContext, childWidget,) => SafeArea(child: childWidget!,),
-      home: const HomeView(),
+      home: const RedditView(),
     );
   }
 }
