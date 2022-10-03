@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_job_test/views/home_view.dart';
 
+import 'locator.dart';
+
 class AppRoot extends StatelessWidget {
-  const AppRoot({Key? key,}) : super(key: key,);
+  AppRoot({Key? key,}) : super(key: key,){
+    setupDependencyLocator();
+  }
 
   // This widget is the root of your application.
   @override
