@@ -15,6 +15,7 @@ dependencies:
   get_it:
   rxdart:
   flutter_bloc:
+  equatable:   
   flutter_hooks:
   requests_inspector:
   device_preview:
