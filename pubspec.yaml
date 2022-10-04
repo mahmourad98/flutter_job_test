@@ -15,6 +15,7 @@ dependencies:
   get_it:
   rxdart:
   flutter_bloc:
+  flutter_hooks:
   requests_inspector:
   device_preview:
   screen_utils:
@@ -26,6 +27,7 @@ dependencies:
   dio_interceptors:
   dio_logging_interceptor:
   dio_cache_interceptor:
+  cached_network_image:
 
 dev_dependencies:
   flutter_test:

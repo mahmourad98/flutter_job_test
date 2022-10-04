@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_job_test/views/reddit_view/home_view.dart';
+import 'package:flutter_job_test/views/reddit_view/reddit_view.dart';
 
 import 'locator.dart';
 
